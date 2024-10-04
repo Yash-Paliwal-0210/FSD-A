@@ -39,6 +39,17 @@ button{
 
 
 }
+.signup
+{
+  width: Hug (104px)px;
+  height: Hug (48px)px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #3940A0 0%, #3CA3C1 100%);
+opacity: 0px;
+border: 1px solid grey;
+color: #FFFFFF;
+}
 
 .main{
     display: flex;
