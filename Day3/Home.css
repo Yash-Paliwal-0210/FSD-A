@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    background-color: antiquewhite;
+}
+
+.items{
+    background-color: lightcoral;
+    border: 5px solid rgb(160, 218, 160);
+    padding: 40px;
+}
+
+.item1, .item2 ,.item6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* .item3 ,.item4, .item5{
+    grid-row-start: 1;
+    grid-row-end: 2;
+} */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    align-items: center;
+    padding: 0px 40px;
+    padding-bottom: 10px ;
+    /* border-bottom: 2px solid grey; */
+}
+
+.main-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.main-items ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main-items ul li{
+    list-style: none;
+}
+button{
+    padding: 4px 20px;
+    border-radius: 10px
+    ;
+    border-style: none;
+
+
+}
+.signup
+{
+  width: Hug (104px)px;
+  height: Hug (48px)px;
+  padding: 12px 20px 12px 20px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #3940A0 0%, #3CA3C1 100%);
+opacity: 0px;
+border: 1px solid grey;
+color: #FFFFFF;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-section-content{
+    height: 500px;
+    padding: 20px;
+    width: 700px;
+    background-color: yellow;
+    overflow: hidden;
+    display: flex;
+}
+
+.footer{
+    border-top: 3px solid grey;
+    margin-top: 20px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.div1{
+    
+    width: 500px;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 196, 196);
+    width: 200px;
+}
+.div2 img{
+    height: 200px;
+    width: 200px;
+}
+
