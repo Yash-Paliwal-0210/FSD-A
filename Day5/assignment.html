@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- <a href="https://abes.ac.in">ABES</a>
     <button onclick="display()"> Change Link</button>
 
@@ -13,32 +13,38 @@
 
     </div> -->
     <!-- <button onclick="display()" > Click me</button> -->
-     <button>Click here</button>
+    <!-- <button>Click here</button> -->
 
+    <input type="text" id="myinput" placeholder="type here.." />
+    <p class="keypressed">KeyPressed</p>
 
     <script>
-        // let at = document.querySelector('a');
-        // let display =()  => {
-        //     at.setAttribute('href', 'https://aktu.ac.in')
-        //     at.innerText ="aktu Website";
-        // }
-        // let display = () => {
-        //     const h1 = document.createElement("h1");
-        //     h1.textContent ="this will be responsible for heading";
-        //     const newDiv = document.createElement("div");
-        //     newDiv.textContent = "This is a new div";
-            
-        //     const body = document.querySelector("body");
-        //     body.appendChild(h1);
-        //     body.appendChild(newDiv);
-        // }
+      // let at = document.querySelector('a');
+      // let display =()  => {
+      //     at.setAttribute('href', 'https://aktu.ac.in')
+      //     at.innerText ="aktu Website";
+      // }
+      // let display = () => {
+      //     const h1 = document.createElement("h1");
+      //     h1.textContent ="this will be responsible for heading";
+      //     const newDiv = document.createElement("div");
+      //     newDiv.textContent = "This is a new div";
 
-        let btn = document.querySelector("button");
-        btn.addEventListener("click" , () => {
-            alert("hello")
-        });
-        
+      //     const body = document.querySelector("body");
+      //     body.appendChild(h1);
+      //     body.appendChild(newDiv);
+      // }
 
+      // let btn = document.querySelector("button");
+      // btn.addEventListener("click" , () => {
+      //     alert("hello")
+      // });
+      const handlekeypress = (event) => {
+        document.querySelector(".keypressed").textContent = event.target.value;
+      };
+
+      let myinput = document.getElementById("myinput");
+      myinput.addEventListener("keydown", handlekeypress);
     </script>
-</body>
+  </body>
 </html>
